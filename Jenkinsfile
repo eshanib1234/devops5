@@ -50,7 +50,7 @@ pipeline {
                 sh '''
                 docker stop myapp || true
                 docker rm myapp || true
-                docker run -d --name myapp -p 5000:5000 $DOCKER_HUB_USER/$IMAGE_NAME:latest
+                docker run -d --name myapp -p 5001:5000 $DOCKER_HUB_USER/$IMAGE_NAME:latest
                 '''
             }
         }
