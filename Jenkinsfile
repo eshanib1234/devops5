@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = "myapp"
-        DOCKER_HUB_USER = "poorans"
+        DOCKER_HUB_USER = "eshanib"
     }
 
     stages {
