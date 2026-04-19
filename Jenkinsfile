@@ -31,7 +31,7 @@ pipeline{
                         }
             }
         }
-        stage(push image){
+        stage('push image'){
             steps{
                 sh '''
                 docker push $DOCKER_HUB_USER/@IMAGE_NAME:latest
